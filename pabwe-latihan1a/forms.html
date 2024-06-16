@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Belajar Forms</title>
+  </head>
+  <body>
+    <h1>Belajar Forms</h1>
+    <form>
+      <h2>Tag Input</h2>
+      <label for="inputText">Masukkan Teks:</label>
+      <input type="text" id="inputText" name="inputText" /><br />
+
+      <label for="inputPassword">Password:</label>
+      <input type="password" id="inputPassword" name="inputPassword" /><br />
+
+      <label for="inputEmail">Email:</label>
+      <input type="email" id="inputEmail" name="inputEmail" /><br />
+
+      <label for="inputNumber">Number:</label>
+      <input type="number" id="inputEmail" name="inputEmail" /><br />
+
+      <label for="inputDate">Date:</label>
+      <input type="date" id="inputDate" name="inputDate" /><br />
+
+      <label for="inputCheckBox">Centang:</label>
+      <input type="checkbox" id="inputCheckBox" nam="inputCheckBox" /><br />
+
+      <label>Jenis Kelamin:</label>
+      <input type="radio" id="male" name="gender" value="male" />
+      <label for="male">Laki-laki</label>
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="female">Perempuan</label><br />
+
+      <label for="inputFile">Unggah File:</label>
+      <input type="file" id="inputFile" name="inputFile" /><br />
+
+      <label for="inputColor">Pilih warna:</label>
+      <input type="color" id="inputColor" name="inputColor" /><br />
+
+      <label for="volume">Volume:</label>
+      <input
+        type="range"
+        id="volume"
+        name="volume"
+        min="0"
+        max="100"
+        step="1"
+        value="50"
+      /><br />
+
+      <label for="inputFruit">Pilih Buah(datalist):</label>
+      <input type="text" id="inputFruit" name="inputFruit" list="fruits" />
+      <datalist id="fruits">
+        <option value="Apel"></option>
+        <option value="Jeruk"></option>
+        <option value="Mangga"></option>
+        <option value="Anggur"></option>
+        <option value="Pisang"></option>
+      </datalist>
+      <br />
+      <input type="submit" value="Kirim" />
+      <input type="reset" value="Reset" />
+      <input type="button" value="Tombol" /><br />
+
+      <h2>TagSelect</h2>
+      <label for="bahasa">Bahasa Pemograman (Select single):</label>
+      <select id="bahasa" name="bahasa">
+        <option value="javascript">JavaScript</option>
+        <option value="python">Python</option>
+        <option value="java">Java</option>
+        <option value="csharp">C#</option>
+        <option value="php">PHP</option>
+      </select>
+      <br />
+      <label for="bahasaKesukaan">Bahasa Pemograman (select multiple):</label>
+      <select id="bahasaKesukaan" name="bahasa_kesukaan" multiple>
+        <option value="javascript">JavaScript</option>
+        <option value="python">Python</option>
+        <option value="java">Java</option>
+        <option value="csharp">C#</option>
+        <option value="php">PHP</option>
+      </select>
+      <br />
+      <label for="buah">Buah (dengan optgroup):</label>
+      <select id="buah" name="buah">
+        <optgroup label="Buah Tropis">
+          <option value="mangga">Mangga</option>
+          <option value="pisang">Pisang</option>
+          <option value="rambutan">Rambutan</option>
+        </optgroup>
+        <optgroup label="Buah Beri">
+          <option value="strawbery">Strawbery</option>
+          <option value="blueberry">Blueberry</option>
+          <option value="blackberry">Blackberry</option>
+        </optgroup>
+        <optgroup label="Buah Jeruk">
+          <option value="jeruk">Jeruk</option>
+          <option value="jeruk_bali">Jeruk Bali</option>
+          <option value="jeruk_manis">Jeruk Manis</option>
+        </optgroup>
+      </select>
+      <br />
+
+      <h2>TagFieldset</h2>
+      <fieldset>
+        <legend>Indormasi Pribadi</legend>
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" /><br />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" /><br />
+
+        <label for="telepon">Telepon:</label>
+        <input type="tel" id="telepon" name="telepon" /><br />
+      </fieldset>
+      <fieldset>
+        <legend>Pengaturan Akun</legend>
+        <label for="username">Username:</label>
+        <input type="text" id="username name=" username /><br />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password name=" password /><br />
+
+        <label for="konfirmasi_password">Konfirmasi Password:</label>
+        <input
+          type="password"
+          id="konfirmasi_password"
+          name="konfirmasi_password"
+        />
+      </fieldset>
+
+      <h2>Tag Button</h2>
+      <button type="button">TombolStandar</button>
+      <button type="send">Kirim</button>
+      <button type="reset">Reset</button>
+    </form>
+  </body>
+</html>
